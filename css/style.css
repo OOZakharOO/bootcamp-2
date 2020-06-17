@@ -1,24 +1,80 @@
-body {
-    background: ;
-}
-
-ul {
-    list-style: none;
+/*универс селектор длявсех елементов*/
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+/*обнуление свойств по умолсанию*/
+ul {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-* {
-    padding: 0;
-    margin: 0;
+body {
+    background: coral;   
 }
 
+/*задаем стили для мобильной версии*/
 .container {
     width: 320px;
     margin: 0 auto;
-    border: 2x solid;
 }
+
+/*ХЭДЭР*/
+.header_wrapper {
+    position: fixed;
+    width: 100%;
+    background: wheat;
+    top: 10px;
+    z-index: 100;
+}
+
+.header_nav {
+    display: flex;
+    flex-flow: column;
+    margin: 0 20px;
+    padding-left: 55px;
+}
+
+.logo {
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-top: 38px;
+}
+
+.logo span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu {
+    padding: 24px 0;
+}
+
+/*СЕКЦИЯ 1*/
+.s1 {
+    padding-top: 200px;
+    background-image: url(./images/s1_background.png);
+}
+
+/*ФУТЭР*/
+.footer_wrapper {
+    background-color: black;
+    width: 100%;
+}
+footer {
+
+    color: grey;
+    padding: 24px 0;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
