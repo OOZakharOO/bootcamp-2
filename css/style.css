@@ -29,7 +29,7 @@ body {
 .header_wrapper {
     position: fixed;
     width: 100%;
-    background: wheat;
+    background: white;
     top: 10px;
     z-index: 100;
 }
@@ -39,12 +39,28 @@ body {
     flex-flow: column;
     margin: 0 20px;
     padding-left: 55px;
+
 }
 
 .logo {
     text-transform: capitalize;
     font-size: 16px;
     padding-top: 38px;
+    position: relative;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    background: url(../images/icon/logo.png);
+    background-color: yellow;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    left: -50px;
+    top: 24px;
 }
 
 .logo span {
@@ -56,10 +72,77 @@ body {
     padding: 24px 0;
 }
 
+.menu li:last-child{
+    position: relative;
+}
+
+.menu li:last-child::before{
+    position: absolute;
+    content: "";
+    background: url(../images/icon/viber.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: -22px;
+}
+
+
 /*СЕКЦИЯ 1*/
 .s1 {
-    padding-top: 200px;
-    background-image: url(./images/s1_background.png);
+    padding-top: 225px;
+    padding-left: 20px;
+    background: #535353 url("../images/s1_background.png");
+    background-size: cover; 
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.s1_title {
+    font-size: 35px;
+    font-family: "GoathamPro-Bold";
+    padding-right: 148px;
+}
+
+.s1_list-item {
+    font-size: 14px;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.s1_list-item span {
+    color: #ffe100;
+}
+
+.s1_list {
+    padding-top: 24px;
+    padding-bottom: 80px;
+}
+
+.s1_list-item::before {
+    position: absolute;
+    content: "";
+    background: url(../images/icon/star.png);
+    width: 14px;
+    height: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.s1_bottom-arrow {
+    transform: rotate(90deg);
+    color: #ffe100;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    padding-right: 54px;
 }
 
 /*ФУТЭР*/
@@ -77,4 +160,5 @@ footer p {
     font-size: 12px;
     text-align: center;
 }
+
 
