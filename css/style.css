@@ -49,7 +49,7 @@ body {
     position: fixed;
     width: 100%;
     background: white;
-    top: 10px;
+    top: 0px;
     z-index: 100;
 }
 
@@ -59,6 +59,27 @@ body {
     margin: 0 20px;
     padding-left: 55px;
 
+}
+
+.up_header {
+    top: 1px;
+    left: 1px;
+    padding-top: 650px;
+    position: fixed;
+}
+
+.up {
+    margin-left: 500px;
+    top: 300px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+}
+
+.up:hover {
+    color: navajowhite;
+    font-size: large;
 }
 
 .logo {
@@ -108,7 +129,80 @@ body {
     left: -22px;
 }
 
+.menu li a {
+    color: red;
+}
 
+.menu li a:hover {
+    color: blue;
+    font-size: large;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,);
+    border-radius: 15px;
+}
+
+.navicon {
+    display: block;
+    border: 2px solid;
+    width: 30px;
+    position: relative;
+}
+
+.navicon::before {
+    position: absolute;
+    content: "";
+    top: ;
+    left: ;
+}
+
+.menu-icon {
+    display: flex;
+    border: 1px solid red;
+    padding: 20px;
+    width: 70px;
+    position: relative;
+}
+/*
+.navicon::after {
+    position: absolute;
+    content: "";
+}
+
+.header .menu-icon {
+    display: flex;
+    flex-flow: column;
+    width: 30px;
+    position: relative;
+    user-select: none;
+    cursor: grab;
+}
+
+.header .menu-icon .navicon {
+    display: block;
+    border: 2px solid;
+    width: 30px;
+    position: relative;
+}
+}
+
+.header .menu-icon .navicon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    background: black;
+    border: 2px solid green;
+    top: 10px;
+}
+
+.header .menu-icon .navicon::after {
+    display: block;
+    content: "";
+    border: 2px solid red;
+    position: absolute;
+    top: -10px;
+    left: 1px;
+}
+*/
 /*СЕКЦИЯ 1*/
 .s1 {
     padding-top: 225px;
@@ -128,11 +222,20 @@ body {
     padding-right: 148px;
 }
 
+.s1_title:hover {
+    padding-left: 65px;
+}
+
 .s1_list-item {
     font-size: 14px;
     padding-left: 24px;
     position: relative;
     margin-bottom: 10px;
+}
+
+.s1_list-item:hover {
+    text-transform: uppercase;
+    font-family: "GothamPro-Bold";
 }
 
 .s1_list-item span {
@@ -191,6 +294,11 @@ padding: 24px 20px 80px 0;
     border: 6px double yellow;
     margin-bottom: 60px;
     position: relative;
+    color: white;
+}
+
+.s2_list-item:hover {
+    color: black;
 }
 
 
@@ -279,6 +387,10 @@ padding: 24px 20px 80px 0;
     border:  15px solid #f1f1f1;
 }
 
+.ant-carousel-element img:hover {
+    border:   15px solid brown;
+}
+
 .ant-carousel-element p {
     font-size: 16px;
     font-weight: bold;
@@ -345,6 +457,10 @@ padding: 24px 20px 80px 0;
     line-height: 30px;
 }
 
+.s4_list-item:hover {
+    border: 2px solid slategrey;
+}
+
 .s2_list-item:last-child {
     display: none;
 }
@@ -384,6 +500,11 @@ padding: 24px 20px 80px 0;
     background-color: #ffe100;
     top: 15px;
     left: 54px;
+}
+
+
+.s5_list-item:hover{
+    color: white;
 }
 
 .s5_list-item,
