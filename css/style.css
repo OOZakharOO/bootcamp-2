@@ -113,11 +113,12 @@ body {
     overflow: hidden;
 }
 
-.menu li:last-child{
+.menu li:nth-child(2){
     position: relative;
+    padding-left: 40px;
 }
 
-.menu li:last-child::before{
+.menu li:nth-child(2)::before{
     position: absolute;
     content: "";
     background: url(../images/icon/viber.png);
@@ -126,7 +127,7 @@ body {
     width: 22px;
     height: 22px;
     top: 0;
-    left: -22px;
+    left: 0;
 }
 
 .menu li a {
@@ -578,4 +579,43 @@ footer {
 footer p {
     font-size: 12px;
     text-align: center;
+}
+
+@media (width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .header-nav {
+        margin: 0 40px;
+        padding: 34px 0 34px 55px;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        overflow: visible;
+    }
+    .menu li {
+        margin-right: 10px;
+    }
+
+    .menu li:nth-child(1) {
+        position: relative;
+    }
+
+    .menu li:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 22px;
+        background: gray;
+        top: 0px;
+        right: -7px;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
 }
