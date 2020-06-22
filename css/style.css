@@ -55,10 +55,11 @@ body {
 
 .header_nav {
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 20px;
-    padding-left: 55px;
-
+    padding: 38px 0 38px 55px;
 }
 
 .up_header {
@@ -85,7 +86,6 @@ body {
 .logo {
     text-transform: capitalize;
     font-size: 16px;
-    padding-top: 38px;
     position: relative;
 }
 
@@ -100,7 +100,7 @@ body {
     width: 46px;
     height: 46px;
     left: -50px;
-    top: 24px;
+    top: -12px;
 }
 
 .logo span {
@@ -109,8 +109,8 @@ body {
 }
 
 .menu {
-    padding: 24px 0;
     font-weight: bold;
+    overflow: hidden;
 }
 
 .menu li:last-child{
@@ -140,37 +140,18 @@ body {
     border-radius: 15px;
 }
 
-.navicon {
-    display: block;
-    border: 2px solid;
-    width: 30px;
-    position: relative;
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
 }
 
-.navicon::before {
-    position: absolute;
-    content: "";
-    top: ;
-    left: ;
-}
-
-.menu-icon {
-    display: flex;
-    border: 1px solid red;
-    padding: 20px;
-    width: 70px;
-    position: relative;
-}
-/*
-.navicon::after {
-    position: absolute;
-    content: "";
+.header .menu-btn {
+    display: none;
 }
 
 .header .menu-icon {
     display: flex;
-    flex-flow: column;
-    width: 30px;
     position: relative;
     user-select: none;
     cursor: grab;
@@ -178,31 +159,51 @@ body {
 
 .header .menu-icon .navicon {
     display: block;
-    border: 2px solid;
-    width: 30px;
+    background: yellow;
+    width: 25px;
+    height: 3px;
     position: relative;
+    transition: background 0.2s ease-out;
 }
+
+.header .menu-icon .navicon::before,
+.header .menu-icon .navicon::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-out;
 }
 
 .header .menu-icon .navicon::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 100%;
-    background: black;
-    border: 2px solid green;
+    background: green;
     top: 10px;
 }
 
 .header .menu-icon .navicon::after {
-    display: block;
-    content: "";
-    border: 2px solid red;
-    position: absolute;
+    background: red;
     top: -10px;
-    left: 1px;
 }
-*/
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon::before {
+    transform: rotate(-45deg);
+    top: 0;
+
+}
+.header .menu-btn:checked~.menu-icon .navicon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 100%;
+}
+
 /*СЕКЦИЯ 1*/
 .s1 {
     padding-top: 225px;
