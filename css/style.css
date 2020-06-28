@@ -2,16 +2,17 @@
 @font-face {
     font-family: "OpenSans";
     src: url(../fonts/OpenSans-Regular.eot) format("embedded-opentype"),
-    url(../fonts/OpenSans-Regular.ttf) format("truetype"),
-    url(../fonts/OpenSans-Regular.woff) format("woff");
+        url(../fonts/OpenSans-Regular.ttf) format("truetype"),
+        url(../fonts/OpenSans-Regular.woff) format("woff");
 }
 
 @font-face {
     font-family: "GothamPro-Bold";
     src: url(../fonts/GothamPro-Bold.eot) format("embedded-opentype"),
-    url(../fonts/GothamPro-Bold.ttf) format("truetype"),
-    url(../fonts/GothamPro-Bold.woff) format("woff");
+        url(../fonts/GothamPro-Bold.ttf) format("truetype"),
+        url(../fonts/GothamPro-Bold.woff) format("woff");
 }
+
 @font-face {
     font-family: "Coustard";
     src: url(../fonts/Coustard-Regular.ttf) format("truetype"),
@@ -35,7 +36,7 @@ a {
 }
 
 body {
-    background: white;   
+    background: white;
 }
 
 /*задаем стили для мобильной версии*/
@@ -113,12 +114,12 @@ body {
     overflow: hidden;
 }
 
-.menu li:nth-child(2){
+.menu li:nth-child(2) {
     position: relative;
     padding-left: 20px;
 }
 
-.menu li:nth-child(2)::before{
+.menu li:nth-child(2)::before {
     position: absolute;
     content: "";
     background: url(../images/icon/viber.png);
@@ -141,7 +142,7 @@ body {
 .menu li a:hover {
     color: blue;
     font-size: large;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0,);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0, );
     border-radius: 15px;
 }
 
@@ -200,6 +201,7 @@ body {
     top: 0;
 
 }
+
 .header .menu-btn:checked~.menu-icon .navicon::after {
     transform: rotate(45deg);
     top: 0;
@@ -213,7 +215,7 @@ body {
 .s1 {
     padding: 225px 20px 0;
     background: #535353 url("../images/s1_background.png");
-    background-size: cover; 
+    background-size: cover;
     background-blend-mode: soft-light;
     display: flex;
     flex-flow: column;
@@ -248,7 +250,7 @@ body {
 }
 
 .s1_list {
-padding: 24px 20px 80px 0;
+    padding: 24px 20px 80px 0;
 }
 
 .s1_list-item::before {
@@ -389,11 +391,11 @@ padding: 24px 20px 80px 0;
 .ant-carousel-element img {
     width: 280px;
     height: 230px;
-    border:  15px solid #f1f1f1;
+    border: 15px solid #f1f1f1;
 }
 
 .ant-carousel-element img:hover {
-    border:   15px solid brown;
+    border: 15px solid brown;
 }
 
 .ant-carousel-element p {
@@ -416,7 +418,7 @@ padding: 24px 20px 80px 0;
 
 /*Sekt4*/
 .s4 {
-
+    padding-top: 100px;
 }
 
 .s4_title {
@@ -437,10 +439,10 @@ padding: 24px 20px 80px 0;
     content: "";
     width: 50px;
     height: 34px;
-    background: url(../images/_\ .png);
+    background: url(../images/icon/s4_mob-icon.png);
     background-position: center;
     background-repeat: no-repeat;
-    top: 30%;
+    top: -31%;
     left: 43%;
 }
 
@@ -509,7 +511,7 @@ padding: 24px 20px 80px 0;
 }
 
 
-.s5_list-item:hover{
+.s5_list-item:hover {
     color: white;
 }
 
@@ -556,6 +558,7 @@ padding: 24px 20px 80px 0;
     top: 4px;
     left: 0;
 }
+
 .s5_list-item::before {
     position: absolute;
     content: "";
@@ -574,6 +577,7 @@ padding: 24px 20px 80px 0;
     background-color: black;
     width: 100%;
 }
+
 footer {
 
     color: grey;
@@ -602,6 +606,7 @@ footer p {
         justify-content: space-between;
         overflow: visible;
     }
+
     .menu li {
         margin-right: 10px;
     }
@@ -623,12 +628,13 @@ footer p {
     .header .menu-icon {
         display: none;
     }
-   /* sekt1 */
+
+    /* sekt1 */
     .s1 {
         padding: 253px 40px 0;
     }
 
- 
+
 
     .s1_title {
         font-size: 50px;
@@ -640,7 +646,8 @@ footer p {
 
     .s1_list-item::before {
         top: 4px;
-    } 
+    }
+
     /* s2 */
 
     .s2_list {
@@ -722,7 +729,7 @@ footer p {
         width: 246px;
         margin: 0 20px 40px 0;
     }
-    
+
     .s5_list:not(:first-child) {
         padding-top: 42px;
     }
@@ -731,6 +738,7 @@ footer p {
         left: 0;
         top: 20px;
     }
+
     .s5_list,
     .s5_list-contact,
     .s5_list-item,
@@ -738,7 +746,7 @@ footer p {
         padding: 0;
         margin: 0;
     }
-    
+
     .s5_list-item {
         padding-left: 39px;
     }
@@ -765,10 +773,10 @@ footer p {
         width: 1280px;
     }
 
-   /* hdr */
+    /* hdr */
     .header-nav {
-      margin: 0 40px;
-      padding: 36px 0 36px 55px;
+        margin: 0 40px;
+        padding: 36px 0 36px 55px;
     }
 
     .header .menu-icon {
@@ -776,10 +784,10 @@ footer p {
     }
 
     .menu {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      overflow: visible;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        overflow: visible;
     }
 
     .menu li:nth-child(1)::after {
@@ -803,6 +811,7 @@ footer p {
     .s1_title {
         font-size: 72px;
     }
+
     .s1_list {
         padding-bottom: 170px;
     }
@@ -818,10 +827,10 @@ footer p {
     /* s2 */
 
     .s2_list {
-        display: flex; */
+        display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        padding-bottom: 30px; 
+        padding-bottom: 30px;
     }
 
     .s2_title {
@@ -836,7 +845,7 @@ footer p {
     .s2_list-item:last-child {
         margin-right: 0;
     }
-    
+
     /* s3 */
 
     .ant-carousel-element {
@@ -852,7 +861,7 @@ footer p {
         width: 570px;
         height: 344px;
     }
-    
+
     /* s4 */
 
     .s4 {
@@ -891,7 +900,7 @@ footer p {
     .s4_list:last-child {
         display: block;
     }
-    
+
     /* s5 */
 
     .s5 {
@@ -918,8 +927,8 @@ footer p {
         padding: 0;
         margin: 0;
     }
-    
-    .s5_list-item{
+
+    .s5_list-item {
         padding: 0;
         margin: 0;
         padding-left: 39px;
@@ -934,7 +943,7 @@ footer p {
         left: 0;
         top: 20px;
     }
-    
+
     .s5_list:not(:first-child) {
         padding-top: 42px;
     }
@@ -947,7 +956,7 @@ footer p {
     .s5_list-contact {
         display: flex;
         flex-flow: row;
-    } 
+    }
 
     .s5_list-contact p {
         margin: 0 10px;
@@ -956,7 +965,7 @@ footer p {
     .s5_list-contact:first-child {
         position: relative;
         padding-right: 10px;
-    } 
+    }
 
     .s5_list-contact:first-child::after {
         position: absolute;
@@ -982,7 +991,7 @@ footer p {
 
     /* ftr */
 
-    
+
     footer {
         padding: 22px 0;
     }
@@ -991,4 +1000,3 @@ footer p {
         font-size: 14px;
     }
 }
-
