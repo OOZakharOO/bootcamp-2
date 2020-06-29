@@ -282,12 +282,81 @@ if(1 < 0) {
 }
 
 //
-let message = "Добро пожаловать!";
-let enteredData = prompt("Введите число от 1 до 5");
-console.log("enteredData:", enteredData);
+// let message = "Добро пожаловать!";
+// let enteredData = prompt("Введите число от 1 до 5");
+// console.log("enteredData:", enteredData);
 
-if (enteredData >= 1 && enteredData <= 5) {
-  console.log("Спасибо вы ввели подходящее число");
-} else {
-  console.log("Вы ввели неподходящее значение");
+// if (enteredData >= 1 && enteredData <= 5) {
+//   console.log("Спасибо вы ввели подходящее число");
+// } else {
+//   console.log("Вы ввели неподходящее значение");
+// }
+
+//циклы
+
+for (let i = 0; i <= 10; i = i += 1) {
+  console.log(`Итерация Н${i + 1} - ${i}`);
 }
+
+// example
+const results = [1, 11, 23, 45, 32, 78, 988, 45];
+console.log(results);
+console.log(results.length);
+
+for (let i =0; i < results.length; i += 1 ){
+  if (results[i] >= 100) {
+  console.log("трехзначный элемент ", results[i]);
+  } else if (results [i] >= 10 && results[i] < 100) {
+    console.log("двухзначный элемент", results[i]);
+  } else {
+    console.log(`это число однозначное`);
+  }
+}
+
+// DOM - Docu
+//
+const projectBody = document.querySelector('body');
+console.log(projectBody);
+console.dir(projectBody);
+
+const headerWrapper = document.querySelector('.header_wrapper');
+console.dir(headerWrapper);
+console.log(headerWrapper);
+
+console.log(headerWrapper.title);
+headerWrapper.title = "Hello";
+console.log(headerWrapper.title);
+
+// const logo = document.querySelector ('.logo');
+const logo = document.getElementById ('main-logo');
+console.log(logo);
+console.dir(logo);
+logo.textContent = "Photo diary";
+logo.style.fontSize = '36px';
+logo.classList.add('example');
+
+// const logo = document.getElementsByClassName('logo')
+// console.dir(logo);
+// console.dir(logo[0].textContent);
+
+// logo[0].textContent = "Photo diary";
+// logo[0].getElementsByClassName.fontSize = '36px';
+// logo[0].classList.add('example');
+
+
+//
+
+// // const logo = document.querySelector ('.logo');
+// const logo = document.getElementsByClassName('logo')
+// console.dir(logo);
+// console.dir(logo[0].textContent);
+
+// logo[0].textContent = "Photo diary";
+// logo[0].getElementsByClassName.fontSize = '36px';
+// logo[0].classList.add('example');
+const navMenu = document.querySelector('ul[data-action="action"]');
+console.log(navMenu);
+console.dir(navMenu);
+navMenu.style.background = "black";
+navMenu.style.padding = "30px"
+

@@ -35,8 +35,11 @@ a {
     color: black;
 }
 
-body {
-    background: white;
+
+.example {
+    background-color: hotpink;
+    color: white;
+    font-size: large;
 }
 
 /*задаем стили для мобильной версии*/
