@@ -233,17 +233,17 @@ console.log(1 && 0 && true && false);
 
 console.log(1 && false && true && 0);
 
-// || - логическое или
-console.log(1 || true || 100);
-console.log(1 || true);
-//    true && true
-console.log(0 || true);
+// // || - логическое или
+// console.log(1 || true || 100);
+// console.log(1 || true);
+// //    true && true
+// console.log(0 || true);
 
-console.log(false || true || 1);
+// console.log(false || true || 1);
 
-console.log("" || 0 || undefined || false);
+// console.log("" || 0 || undefined || false);
 
-console.log(NaN ||  || undefined || false);
+// console.log(NaN ||  || undefined || false);
 
 
 // ! - логическое не
@@ -264,5 +264,30 @@ console.log(!!NaN);
 console.log(!!undefined);
 console.log(!!null);
 
+//взаимодействие с  пользователями
+
+// let mgs = confirm('Are you ready?')
+// console.log(mgs); 
+
+// let greet = alert('Welcome!');
+// console.log(greet);
+
+// let userData = prompt('enter your name please');
+// console.log(userData);
 
 
+
+if(1 < 0) {
+  console.log('Hello World!');
+}
+
+//
+let message = "Добро пожаловать!";
+let enteredData = prompt("Введите число от 1 до 5");
+console.log("enteredData:", enteredData);
+
+if (enteredData >= 1 && enteredData <= 5) {
+  console.log("Спасибо вы ввели подходящее число");
+} else {
+  console.log("Вы ввели неподходящее значение");
+}

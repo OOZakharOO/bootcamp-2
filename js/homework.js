@@ -23,3 +23,14 @@ const hero = {
 console.log(hero);
 
 hero.toShowName();
+
+
+
+let greet = prompt("Введите имя");
+console.log("greet:", greet);
+
+if (greet) {
+  alert(`Привет! ${greet}`);
+} else {
+  alert(`До свидания!`);
+}
