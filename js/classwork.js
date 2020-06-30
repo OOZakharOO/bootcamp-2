@@ -313,7 +313,7 @@ for (let i =0; i < results.length; i += 1 ){
   }
 }
 
-// DOM - Docu
+// DOM - Document
 //
 const projectBody = document.querySelector('body');
 console.log(projectBody);
