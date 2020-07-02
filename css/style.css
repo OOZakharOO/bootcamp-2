@@ -377,6 +377,8 @@ a {
     justify-content: flex-start;
     width: 320px;
     overflow: hidden;
+    margin: 0 20px;
+    position: relative;
 }
 
 .ant-carousel-list {
@@ -387,7 +389,7 @@ a {
 }
 
 .ant-carousel-element {
-    margin: 20px;
+    margin-right: 20px;
 }
 
 
@@ -418,6 +420,38 @@ a {
     top: 10px;
     left: 0;
 }
+
+div.ant-carousel-arrow-left,
+div.ant-carousel-arrow-right {
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 101;
+    top: 38px;
+    padding: 15px;
+}
+
+div.ant-carousel-arrow-left:hover,
+div.ant-carousel-arrow-right:hover {
+    opacity: 1;
+}
+
+div.ant-carousel-arrow-left {
+    left: 0px;
+    display: block;
+    background: #53535383 url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+    background-position: center;
+}
+
+div.ant-carousel-arrow-right {
+    right: 0px;
+    display: block;
+    background: #53535383 url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
+    background-position: center;
+}
+
+
 
 /*Sekt4*/
 .s4 {
@@ -677,11 +711,12 @@ footer p {
 
     .ant-carousel-hider {
         width: 768px;
+        margin: 0 40px;
     }
 
     .ant-carousel-element img {
-        width: 334px;
-        height: 240px;
+        width: 17px;
+        height: 344px;
     }
 
     /* s4 */
